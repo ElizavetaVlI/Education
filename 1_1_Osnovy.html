@@ -1,0 +1,35 @@
+<!DOCTYPE html> <!--Объявление формата документа-->
+<html>
+<head>
+    <meta charset="UTF-8" /> <!--Определяем кодировку символов документа-->
+    <title>...</title> <!--Заголовок документа-->
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!--Подключение внешей таблицы стилей-->
+    <!--2 способ подключить файл - <style> @import url(style,css); </style>-->
+    <script src="script.js"></script>
+
+    <meta name="description" lang="ru" content="Описание содержимого страницы на русском" />
+    <meta name="description" lang="en" content="Description in english" />
+    <meta name="keywords" lang="ru" content="Ключевые слова на русском" />
+    <meta name="keywords" lang="en" content="Keywords in english" />
+
+    <meta name="robots" content="index, follow" /> <!--Индексация и преход по ссылкам разрешены (Также может noindex, nofollow, т.е. запрещены)-->
+    <meta http-equiv="refresh" content="30" /> <!--Автоматическая перезагрузка страницы через заданный промежуток времени (30 сек)-->
+    <!--<meta http-equiv="refresh" content="0;url=http://yandex.ru/" Для переброса посетителя на другую страницу-->
+
+    <style>
+    .paper {
+        width: 200px;
+        height: 300px;
+        background-color: #ef4444;
+        color: #666666;
+    }
+    </style> <!--Внутри него задаются стили, которые используются на странице-->
+</head>
+<body> <!--Основная часть документа-->
+    <div class="paper">
+    ...
+    </div> <!--Чтобы подключить стиль, необходимо присвоить название через атрибут class (или id)-->
+
+    <p style="color: #666666; background-color:#ef4444; padding: 20px;">...</p> <!--CSS-код встроинный в элемент разметки в виде значения атрибута style-->
+</body>    
+</html>
