@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/2_1_OsnovyCSS.css" /> <!--Подключение внешней таблицы стилей-->
+    <!--Внутренние стили-->
+    <style>
+        h1,
+        h2 {
+            color: red;
+            font-family: "Times New Roman", Georgia, Serif;
+            line-height: 1.3em;
+        }
+        
+        @import url(mobile.css);
+        p {
+            font-size: 0.9em;
+            color: grey;
+        }
+    </style> <!--Правило @import позволяет загружать внешние таблицы стилей-->
+
+</head>
+<body>
+    <p style="font-weight:bold; color:red;">Встроенные стили</p>
+
+    <h1 class="headline">Text</h1>
+
+    <div id="sidebar"></div>
+</body>
+</html>
