@@ -1,0 +1,47 @@
+/*Стиль рамки*/
+p {
+    border-style: none;/*Отсутствует*/
+    border-style: hidden;/*Эквивалентно none*/
+    border-style: dotted;/*Рамка в виде точек*/
+    border-style: dashed;/*Пунктиром*/
+    border-style: solid;/*Сплошная*/
+    border-style: double;/*тонкая сплошная*/
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-style: solid dotted none dotted;/*4 разных стиля для рамки элемента*/
+}
+p {
+    border-top-style: solid;/*Рамка для верхней стороны*/
+    border-bottom-style: solid;/*Для нижней стороны*/
+    border-left-style: solid;/*Для левой стороны*/
+    border-right-style: solid;/*Для правой стороны*/
+}
+
+/*Цвет рамки*/
+p {
+    border-color: #cacd58;/*Для всей рамки одинаковый цвет*/
+    border-color: #cacd58 #5faf8a #b9cea5 #aab238;/*Для каждой стороны разный цвет*/
+    border-color: transparent;/*Прозрачный цвет*/
+}
+
+/*Ширина рамки*/
+p {
+    border-width: thin;/*Ширина уже, чем medium*/
+    border-width: medium;/*По умолчанию*/
+    border-width: thick;/*Шире, чем medium*/
+    border-width: 2px;
+}
+
+/*Задание рамки одним свойством*/
+div {
+    width: 100px; 
+    height: 100px; 
+    border: 2px solid grey;/*Задается ширина, стиль и цвет сразу*/
+}
+
+/*Задание рамки для одной границы элемента*/
+p {
+    border-top: 2px solid grey;
+}/*Для верхней границы, для нижней - bottom, левой - left, правой - right.*/
