@@ -1,0 +1,202 @@
+/*Границы таблицы*/
+table {
+    border-collapse: collapse;/*Убирает пустые промежутки между ячейками*/
+    border: 1px solid grey;/*Устанавливает для таблицы внешнюю границу*/
+}
+
+/*Границы ячеек заголовка*/
+th {
+    border: 1px solid grey;
+}
+
+/*Границы ячеек тела таблицы*/
+td {
+    border: 1px solid grey;
+}
+
+/*Выделение внешней границы путем увеличения ширины*/
+table {
+    border: 3px solid grey;
+}
+
+table {
+    border-top: 3px solid grey;
+}/*Устанавливаем для таблицы внешнюю границу*/
+td {
+    border-bottom: 1px solid grey;
+} /*Задаём для ячейки тела таблицы границу*/
+
+/*Ширина таблицы*/
+table {
+    width: 600px;
+}
+th {
+    width: 20%;
+}
+td:first-child {
+    width: 30%;
+}/*Для первого столбца*/
+/*Высота таблицы
+Не задается. Используется padding*/
+th, td {
+    padding: 10px 15px;
+}
+
+/*Заголовок таблицы*/
+caption {
+    caption-side: bottom;
+    text-align: right;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/*Промежуток между рамками ячеек*/
+table {
+    border-collapse: collapse;
+}/*Рамки сливаютя, промежуток между рамками убирается*/
+table {
+    border-collapse: separate;
+}/*Рамки располагаются раздельно*/
+table {
+    border-collapse: separate;
+    border-spacing: 10px 20px;/*1ое - горизонтальный промежуток, 2ое - вертикальный*/
+}
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+/*Пустые ячейки*/
+table {
+    border: 1px solid #69c;
+    border-collapse: separate;
+    empty-cells: hide;/*Ячейка скрыта, show - отрисовываться также, как для ячейка, имеющая содержимое*/
+}
+th, td {
+    border: 2px solid #69c;
+}
+
+/*Компоновка макета таблицы*/
+table {
+    table-layout: auto;/*Определяется шириной его содержимого*/
+    table-layout: fixed;/*Задана ширина*/
+}
+
+/*Макеты таблиц*/
+/*Горизонтальный минимализм*/
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;
+    background: white;
+    max-width: 70%;
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th {
+    font-weight: normal;
+    color: #039;
+    border-bottom: 2px solid #6678b1;
+    padding: 10px 8px;
+}
+td {
+    border-bottom: 1px solid #ccc;
+    color: #669;
+    padding: 9px 8px;
+    transition: .3s linear;
+}
+tr:hover td {
+    color: #6699ff;
+}/*Выделяет строку при наведении мыши*/
+
+/*Вертикальный минимализм*/
+th {
+    font-weight: normal;
+    border-bottom: 2px solid #6678b1;
+    border-right: 30px solid white;
+    border-left: 30px solid white;
+    color: #039;
+    padding: 8px 2px;
+}
+td {
+    border-right: 30px solid white;
+    border-left: 30px solid white;
+    color: #669;
+    padding: 12px 2px;
+}
+
+/*"Коробочный" стиль*/
+th {
+    font-size: 13px;
+    font-weight: normal;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid white;
+    color: #039;
+    padding: 8px;
+}
+td {
+    background: #e8edff;
+    border-bottom: 1px solid white;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 8px;
+}
+tr:hover td {
+    background: #ccddff;
+}
+
+/*Горизонтальная зебра*/
+th {
+    font-weight: normal;
+    color: #039;
+    padding: 10px 15px;
+}
+td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+}
+tr:nth-child(2n) {
+    background: #e8edff;
+}
+
+/*Газетный стиль*/
+table {
+    border: 1px solid #69c;
+}
+th {
+    font-weight: normal;
+    color: #039;
+    border-bottom: 1px dashed #69c;
+    padding: 12px 17px;
+}
+td {
+    color: #669;
+    padding: 7px 17px;
+}
+tr:hover td {
+    background: #ccddff;
+}
+
+/*Фон таблицы*/
+table {
+    background: url("Example.png") 98% 86% no-repeat;
+}
+th {
+    font-weight: normal;
+    font-size: 14px;
+    color: #339;
+    padding: 10px 12px;
+    background: white;
+}
+td {
+    color: #669;
+    border-top: 1px solid white;
+    padding: 10px 12px;
+    background: rgba(51, 51, 153, .2);
+    transition: .3s;
+}
+ tr:hover td {
+    background: rgba(51, 51, 153, .1);
+}
