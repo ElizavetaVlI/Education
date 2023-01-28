@@ -1,0 +1,76 @@
+/*Семейство шрифтов*/
+p {
+    font-family: "Times New Roman", Georgia, Serif;
+    font-family: serif;/*Шрифты с засечками*/
+    font-family: sans-serif;/*Рубленные шрифты*/
+    font-family: monospace;/*Моноширные*/
+    font-family: system-ui;/*Системные*/
+    font-family: inherit;
+    font-family: initial;
+}
+/*Насыщенность шрифта*/
+p {
+    font-weight: normal;/*Нормальная насыщенность шрифта, эквивалентна 400*/
+    font-weight: bold;/*Делает полужирным, эквивалентно 700*/
+    font-weight: lighter;/*Насыщенность будет больше, чем у предка*/
+    font-weight: bolder;/*Насыщенность будет больше*/
+    font-weight: 100;/*Самый легкий вариант начертания шрифта*/
+    font-weight: 900;/*Самый плотный вариант*/
+    font-weight: inherit;
+    font-weight: initial;
+}
+/*Ширина шрифта*/
+p {
+    font-stretch: ultra-condensed;/*Наиболее сжатый шрифт*/
+    font-stretch: extra-condensed;/*Второй по сжатости шрифт*/
+    font-stretch: condensed;/*Сжатый шрифт*/
+    font-stretch: semi-condensed;/*Немного сжатый шрифт*/
+    font-stretch: normal;/*По умолчанию*/
+    font-stretch: semi-expanded;/*Слегка расширенный*/
+    font-stretch: expanded;/*Расширенный шрифт*/
+    font-stretch: extra-expanded;/*Второй по расширенности*/
+    font-stretch: ultra-expanded;/*Максимально расширенный*/
+    font-stretch: inherit;
+    font-stretch: initial;
+}
+/*Начертание шрифта*/
+p {
+    font-style: normal;
+    font-style: italic;/*Текст курсивом*/
+    font-style: oblique;/*Наклонное начертание шрифта*/
+    font-style: inherit;
+    font-style: initial;
+}
+/*Размер шрифта*/
+p {
+    font-size: xx-small;/*Коэффициент маштабирования 3/5, заголовок h6*/
+    font-size: x-small;/*К = 3/4*/
+    font-size: small;/*К = 8/9, h5*/
+    font-size: medium;/*К = 1, h4*/
+    font-size: large;/*К = 6/5, h3*/
+    font-size: x-large;/*К = 3/2, h2*/
+    font-size: xx-large;/*К = 2/1, h1*/
+    font-size: smaller;/*Изменение размера относительно родителя, меньше*/
+    font-size: larger;/*Аналогично, больше*/
+    font-size: 14px;
+    font-size: 0.8em;
+    font-size: 80%;
+    font-size: inherit;
+    font-size: initial;
+}
+/*Относительный размер шрифта*/
+p {
+    font-size-adjust: none;/*Не сохраняет x-height шрифта*/
+    font-size-adjust: 0.7;/*Вычисляется по формуле*/
+    font-size-adjust: inherit;
+    font-size-adjust: initial;
+}
+/*Синтез шрифтов*/
+p {
+    font-synthesis: none;/*Запрещает синтез*/
+    font-synthesis: weight;/*Жирный шрифт может быть синтезирован по необходимости*/
+    font-synthesis: style;/*Синтезируется только курсив*/
+    font-synthesis: weight style;/*Стоит по умолчанию*/
+    font-synthesis: initial;
+    font-synthesis: inherit;
+}
