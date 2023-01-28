@@ -1,0 +1,105 @@
+/*Преобразование текста*/
+p {
+    text-transform: none;/*Отсутствуют*/
+    text-transform: capitalize;/*Первая буква каждого слова прописная*/
+    text-transform: uppercase;/*Все слова прописными буквами*/
+    text-transform: lowercase;/*Все слова строчными буквами*/
+    text-transform: inherit;
+    text-transform: initial;
+}
+/*Обработка пробелов и переносы строк*/
+p {
+    white-space: normal;/*Значение по уолчанию*/
+    white-space: nowrap;/*Запрещает переносы строк*/
+    white-space: pre;/*Отображает дополнительные пробелы и переносы строк*/
+    white-space: pre-wrap;/*Разрывы строк, где это необходимо*/
+    white-space: pre-line;/*Удаляет лишние пробелы*/
+    white-space: break-spaces;/*Идентично pre-wrap, но возможность переноса строки существует после каждого неудаляемого пробела*/
+    white-space: inherit;
+    white-space: initial;
+}
+/*Настройка табуляции*/
+p {
+    tab-size: 2;/*Табуляция, равная 2м пробелам*/
+    tab-size: 10px;/*Указывается в единицах длины*/
+    tab-size: inherit;
+    tab-size: initial;
+}
+/*Разрыв строки и границы слов*/
+p {
+    word-break: normal;/*Слова разрываютя в соответствии с обычными првилами*/
+    word-break: break-all;/*Разрыв допускается в пределах слов*/
+    word-break: keep-all;/*Запрещает разрым между парами символов*/
+    word-break: inherit;
+    word-break: initial;
+
+    line-break: auto;/*Браузер определяет набор используемых ограничений на разрыв строки*/
+    line-break: loose;/*Разбивает текст, используя наименее ограничивающий набор правил переноса строк*/
+    line-break: normal;/*Использует наиболее распространенный набор правил переноса строк*/
+    line-break: strict;/*Использует строгий набор правил преноса строк*/
+    line-break: inherit;
+    line-break: initial;
+
+    /*Расстановка переносов*/
+    hyphens: none;/*Слова не переносятся*/
+    hyphens: manual;/*Слова переносятся, где есть символы, которые указывают на возможность переноса слов*/
+    hyphens: auto;/*Слова разбиты на возможности переноса, которые определяются автоматически*/
+    hyphens: inherit;
+    hyphens: initial;
+
+    /*Переполнение блока-обертки*/
+    overflow-wrap: normal;/*Неразрывные строки могут разрываться только в разрешенных точках разрыва*/
+    overflow-wrap: break-word;
+    overflow-wrap: inherit;
+    overflow-wrap: initial;
+}
+/*Выравнивание*/
+p {
+    /*Выравнивание текста*/
+    text-align: start;/*Выравнивает по начальному краю линейного блока*/
+    text-align: end;/*По конечному краю линейного блока*/
+    text-align: left;/*По левому краю*/
+    text-align: right;/*По правому краю*/
+    text-align: center;/*Центрируется внутри блока*/
+    text-align: justify;/*Выравнивание по ширине*/
+    text-align: justify-all;/*Выравнивание по ширине, также выравнивает последнюю строку*/
+    text-align: match-parent;/*так же, как inherit за исключением того, что унаследованное значение start или end интерпретируется относительно значения direction*/
+    text-align: inherit;
+    /*Выравнивание последней строки*/
+    text-align-last: auto;/*содержимое в соответствующей строке выравнивается по text-align, но при justify выравнивается по началу блока*/
+    text-align-last: start;
+    text-align-last: end;
+    text-align-last: left;
+    text-align-last: right;
+    text-align-last: center;
+    text-align-last: justify;
+    text-align-last: match-parent;
+}
+/*Промежутки*/
+p {
+    word-spacing: normal;/*Дополнительный интервал не применяется*/
+    word-spacing: 1px;/*Дополнительный интервал к внутреннему интервалу между словами*/
+    word-spacing: 0.2em;
+    word-spacing: 1rem;
+    word-spacing: inherit;
+    word-spacing: initial;
+    /*Трекинг, интервал между смежными типографскими символами*/
+    letter-spacing: normal;/*Дополнительный интервал не применяется*/
+    letter-spacing: 0.1em;/*Определяет дополнительный интервал между типографскими символами*/
+    letter-spacing: 2px;
+    letter-spacing: inherit;
+    letter-spacing: initial;
+}
+/*Отступ первой строки*/
+p {
+    text-indent: 5mm;/*Размер отступа  в виде абсолютной днины*/
+    text-indent: 20px;
+    text-indent: 5%;/*Вычисляется от собственной логической ширины блока-контейнера*/
+    text-indent: 2em each-line;/*Затрагивает первую строку каждого блока-контейнера*/
+    text-indent: 2em hanging;/*Все строки кроме первой будут с отступом*/
+    text-indent: inherit;
+    text-indent: initial;
+}
+
+
+   
